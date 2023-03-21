@@ -4,15 +4,18 @@
         "es2021": true
     },
     "extends": "plugin:react/recommended",
-    "overrides": [
-    ],
+    "parser": "@babel/eslint-parser",
+    "overrides": [],
     "parserOptions": {
         "ecmaVersion": "latest",
+        "requireConfigFile": false,
         "sourceType": "module"
     },
     "plugins": [
         "react"
     ],
     "rules": {
+        "react/prop-types": 0,
+        "react/react-in-jsx-scope": 0
     }
 }
